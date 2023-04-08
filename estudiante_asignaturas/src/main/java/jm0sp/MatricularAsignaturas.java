@@ -14,7 +14,7 @@ public class MatricularAsignaturas{
     String matrizAsignaturas[][];
     String matrizMatriculas[][];
 
-    String alumno;
+    String alumno;  	
     String codigoEstudiante;    
     MatricularAsignaturas(String estudiantes[][], String asignaturas[][], String matriculas[][],int contadorEstudiantes, int contadorAsignaturas, int contadorMatriculas){
         System.out.println("Digite el codigo de el alumno que quiere matricular");
