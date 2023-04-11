@@ -32,7 +32,6 @@ public class MatricularAsignaturas{
                 existe = true;
                 alumno  = estudiantes[i][1];
                 codigoEstudiante = estudiantes[i][0];
-                
                 menu();
                 return;
             }
@@ -41,6 +40,10 @@ public class MatricularAsignaturas{
             System.out.println("Estudiante no encontrado");;    
             return;
         }
+    }
+
+    void validarCreditos(){
+        
     }
 
     void menu(){
