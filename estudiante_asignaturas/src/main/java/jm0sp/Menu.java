@@ -106,6 +106,7 @@ public class Menu{
     void matricularAsignaturas(){
         MatricularAsignaturas mA = new MatricularAsignaturas(estudiantes, asignaturas, matriculas, contadorEstudiantes, contadorAsignaturas, contadorMatriculas);
         matriculas = mA.x;
+        contadorMatriculas = mA.contador;
        contadorMatriculas++;
     }
     void mostrarMatriculas(){

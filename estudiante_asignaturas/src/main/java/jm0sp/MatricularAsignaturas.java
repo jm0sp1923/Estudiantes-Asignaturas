@@ -15,7 +15,9 @@ public class MatricularAsignaturas{
     String matrizMatriculas[][];
 
     String alumno;  	
-    String codigoEstudiante;    
+    String codigoEstudiante;  
+    int contador = 0;  
+    int cantCreditosEstudiante;
     MatricularAsignaturas(String estudiantes[][], String asignaturas[][], String matriculas[][],int contadorEstudiantes, int contadorAsignaturas, int contadorMatriculas){
         System.out.println("Digite el codigo de el alumno que quiere matricular");
         String codigo = sc.nextLine();
@@ -30,6 +32,7 @@ public class MatricularAsignaturas{
                 existe = true;
                 alumno  = estudiantes[i][1];
                 codigoEstudiante = estudiantes[i][0];
+                
                 menu();
                 return;
             }
@@ -51,6 +54,7 @@ public class MatricularAsignaturas{
             switch(opc){
                 case 1:{
                     mostrarAsignaturas();
+                    contadorMatriculasM++;
                     break;
                 }
                 case 2:{
@@ -93,6 +97,7 @@ public class MatricularAsignaturas{
         matrizMatriculas[contadorMatriculasM][2] = nombreAsignatura;
         matrizMatriculas[contadorMatriculasM][3] = cantCreditos;
         this.x = matrizMatriculas;
+        this.contador = contadorMatriculasM;
         return;
     }
 }
